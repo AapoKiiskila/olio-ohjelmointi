@@ -1,13 +1,9 @@
-#include "chef.h"
 #include "italianchef.h"
 
 int main()
 {
-    Chef objectChef3("Jyrki");
-    ItalianChef objectChef4("Mario");
-    objectChef3.makeSalad();
-    objectChef4.makePasta();
-    objectChef3.makeSoup();
+    ItalianChef objectChef4("Mario",250,100);
+    objectChef4.makePasta(250,100);
 
     return 0;
 }

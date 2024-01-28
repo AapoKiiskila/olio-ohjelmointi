@@ -1,7 +1,7 @@
 #include "italianchef.h"
 
 
-ItalianChef::ItalianChef(string newName) : Chef(newName)
+ItalianChef::ItalianChef(string newName,int jauhot, int vesi) : Chef(newName)
 {
     cout<<"Chef "<<name<<" konstruktori"<<endl;
 }
@@ -11,7 +11,9 @@ string ItalianChef::getName()
     return name;
 }
 
-void ItalianChef::makePasta()
+void ItalianChef::makePasta(int jauhot, int vesi)
 {
-    cout<<"Chef "<<name<<" makes pasta"<<endl;
+    cout<<"Chef "<<name<<" makes pasta with special recipe"<<endl;
+    cout<<"Chef "<<name<<" uses jauhot = "<<jauhot<<endl;
+    cout<<"Chef "<<name<<" uses vesi = "<<vesi<<endl;
 }
